@@ -24,13 +24,14 @@ This is a docker file to automate the logging in of torrent trackers every few h
 * IPTorrents (IPTorrents.com) [CURRENTLY NOT WORKING DUE TO CLOUDFLARE]
 * Immortal Seed (ImmortalSeed.me)
 * LST (LST.gg)
-* MyAnonmouse (MyAnonamouse.net)
+* MyAnonaMouse (MyAnonamouse.net)
 * MoreThanTV (MoreThanTV.me)
 * Pornbay (Pornbay.org)
 * PussyTorrents (PussyTorrents.org)
 * TorrentLeech (TorrentLeech.org)
 * TorrentSeeds (TorrentSeeds.org)
 * TV Vault (TV-Vault.me)
+* Zenith (znth.cx)
 
 ## Requesting more sites:
 
@@ -39,6 +40,8 @@ To request more sites, please open an issue on github in the following format
 * **LOGIN URL**: Post the login url (prior to logging in)
 * **POST LOGIN URL**: Post the post login url (after logging in), if there's a username in the url, please replace it with `[REDACTED]`
 * **LOGIN TITLE**: Post the title of the page of the website after logging in
+
+* Use the tracker_config_builder.py, it requires BeautifulSoup4 & Selenium. Its vibe coded as. Im not clever enough to create something thatll work better. But, this works moth of the time.
 
 After updating `tracker_config.json` I will notify you and ask you to please try running TAL again to see if you get a successful login.
 
@@ -115,11 +118,3 @@ cd /app/config/logs/
 more trackerautologin.log
 ```
 
-### Unraid Community Applications
-
-This app is now located on the Unraid Community Applications and can be ran as a typical app there as well.
-
-
-## Future work
-
-One thing I would like to add to this is for it to take a screenshot of your profile stats with every successful login, with it keeping the most recent 5 photos. The benefit of this is that you will always have your stats on how much data you shared when you downloaded your Linux isos. 
