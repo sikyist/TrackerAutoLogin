@@ -234,14 +234,14 @@
 		"submit_box_type": "XPATH"
 	},
 	"Zenith": {
+		"url": "https://znth.cx/login",
+		"login_url": "https://znth.cx/pages/1",
         "login_box": "username",
         "login_box_type": "ID",
-        "login_url": "https://znth.cx/login",
         "password_box": "password",
         "password_box_type": "ID",
         "submit_box": "//button[@class='auth-form__primary-button']",
-        "submit_box_type": "XPATH",
-        "url": "https://znth.cx/login",
-        "login_title": "Login - Zenith"
+        "submit_box_type": "XPATH"
+        
     }
 }
