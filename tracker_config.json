@@ -1,4 +1,14 @@
 {
+	"ABtorrents": {
+		"url": "https://usefultrash.net/login.php",
+        "login_box": "username",
+        "login_box_type": "NAME",
+        "login_url": "i cannot test this",
+        "password_box": "password",
+        "password_box_type": "NAME",
+        "submit_box": "//input[@type='submit' and @name='submitme' and @value='Login' and @class='btn-clean']",
+        "submit_box_type": "XPATH"
+    },
 	"Aither": {
 		"url": "https://aither.cc/login",
 		"login_url": "https://aither.cc/",
@@ -72,6 +82,16 @@
 		"submit_box": "//button[@class='animated']",
 		"submit_box_type": "XPATH"
 	},
+	"Fappaizuri": {
+        "login_box": "username",
+        "login_box_type": "NAME",
+        "login_url": "i cant test.",
+        "password_box": "password-input",
+        "password_box_type": "ID",
+        "submit_box": "//input[@type='submit' and @id='lgbnt']",
+        "submit_box_type": "XPATH",
+        "url": "https://fappaizuri.me"
+    },
 	"Gay-Torrents": {
 		"url": "https://gay-torrents.org/",
 		"login_url": "https://gay-torrents.org/index.php",
@@ -120,10 +140,10 @@
 		"login_url": "https://iptorrents.com/t",
 		"login_title": "Torrents - IPTorrents - #1 Private Tracker",
 		"login_box": "username",
-		"login_box_type": "NAME",
+		"login_box_type": "ID",
 		"password_box": "password",
-		"password_box_type": "NAME",
-		"submit_box": "//input[@type='submit']",
+		"password_box_type": "ID",
+		"submit_box": "//button[contains(@class,'submit-btn')]",
 		"submit_box_type": "XPATH"
 	},
 	"LST": {
