@@ -41,7 +41,8 @@ To request more sites, please open an issue on github in the following format
 * **POST LOGIN URL**: Post the post login url (after logging in), if there's a username in the url, please replace it with `[REDACTED]`
 * **LOGIN TITLE**: Post the title of the page of the website after logging in
 
-* Use the tracker_config_builder.py, it requires BeautifulSoup4 & Selenium. Its vibe coded as. Im not clever enough to create something thatll work better. But, this works moth of the time.
+* Use the tracker_config_builder.py, it requires BeautifulSoup4 & Selenium. Its vibe coded asf. Im not clever enough to create something that'll work better. But, this works most of the time.
+
 
 After updating `tracker_config.json` I will notify you and ask you to please try running TAL again to see if you get a successful login.
 
@@ -72,14 +73,14 @@ version: '3.3'
 services:
     trackerautologin:
         container_name: trackerautologin
-        image: mastiffmushroom/trackerautologin
+        image: sikyist/trackerautologin
         environment:
-          - PUID=1000
-          - PGID=1000  
-          - UMASK=000 #PGID PUID UMASK should be updated to match your env
+          - PUID=99
+          - PGID=100  
+          - UMASK=002 #PGID PUID UMASK should be updated to match your env
           - TZ=America/Toronto #update to your timezone
         volumes:
-            - /path/on/your/system/:/app/config/ #specify your config file location
+            - /mnt/user/appdata/TrackerAutoLogin/:/app/config/ #specify your config file location
         restart: unless-stopped
 ```
 
